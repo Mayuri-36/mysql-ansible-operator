@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-cm
+  labels:
+    app: mysql
+data:
+  MYSQL_USER: admin
+  MYSQL_PASSWORD: admin123
+  MYSQL_DB: mydb

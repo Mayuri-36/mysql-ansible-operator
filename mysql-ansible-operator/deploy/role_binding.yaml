@@ -1,0 +1,11 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: mysql-ansible-operator
+subjects:
+- kind: ServiceAccount
+  name: mysql-ansible-operator
+roleRef:
+  kind: Role
+  name: mysql-ansible-operator
+  apiGroup: rbac.authorization.k8s.io
