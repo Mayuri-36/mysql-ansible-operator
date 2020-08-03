@@ -2,7 +2,7 @@ kind: PersistentVolume
 apiVersion: v1
 metadata:
   name: mysql-pv-vol1
-  namespace: psql
+  namespace: mysql
   labels:
     type: local
     app: mysql
@@ -18,7 +18,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: mysql-pvc-vol1
-  namespace: psql
+  namespace: mysql
   labels:
     type: local
     app: mysql
